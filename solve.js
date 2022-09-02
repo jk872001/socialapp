@@ -1,7 +1,10 @@
-function val()
-{
-    "use strict"
-    return this;
+"use strict"
+let obj={
+    a:1,
+    print: function ()
+    {
+        console.log(this.a)
+    }
 }
-
-console.log(val())
+let second=obj.print;
+second();
